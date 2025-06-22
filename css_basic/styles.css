@@ -1,27 +1,69 @@
-/* Flexbox layout for TechCon 2024 pages */
+/* --- Custom Theme Overrides (styles.css) --- */
 
-/* Make body a flex container in column direction */
+/* Body & page background */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #f0f4f8;
 }
 
-/* Make main a flex container in row direction and allow it to grow */
-main {
-  display: flex;
-  flex-direction: row;
-  flex: auto;
+/* Header bar */
+header {
+  background: #283e4a;
+}
+header ul li.logo {
+  color: #ffdd57;
+}
+header ul li a {
+  color: #ffffff;
+  padding: 0.5em 1em;
+}
+header ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
-/* Article takes up two parts of available space and scrolls if needed */
+/* Article styling */
 article {
-  flex: 2;
-  overflow-y: auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Aside takes up one part of available space and scrolls if needed */
+/* Table in article */
+.learners-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+.learners-table th,
+.learners-table td {
+  border: 1px solid #dde4ea;
+  padding: 0.75rem;
+  text-align: left;
+}
+.learners-table th {
+  background: #e1eaf2;
+}
+
+/* Aside styling */
 aside {
-  flex: 1;
-  overflow-y: auto;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-left: 4px solid #283e4a;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Footer bar */
+footer {
+  background: #283e4a;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+}
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
