@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="base.css" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" />
-    <title>My Tweets</title>
-  </head>
-  <body>
-    <header>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tweets.html">Tweets</a></li>
-      </ul>
-    </header>
-    <main>
-      <article>
-        <h1>My Twitter Feed</h1>
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tweets</title>
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="works_on_smartphone">
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
+  <main>
+    <article>
+      <h1>My Twitter Feed</h1>
 
-        <!-- Embedded Tweet -->
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">
-            Just launched my new HTML portfolio site! Check it out and let me
-            know your thoughts. #webdev #HTML
-          </p>
-          &mdash; Marvin Odhiambo (@Marvin_Odhiambo)
-          <a
-            href="https://twitter.com/Marvin_Odhiambo/status/1234567890123456789"
-            >June 19, 2025</a
-          >
-        </blockquote>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
-      </article>
-      <aside>
-        <p>placeholder to add comment thread later</p>
-      </aside>
-    </main>
-    <footer>
-      <p>
-        Made by Marvin Odhiambo -
-        <a href="https://marvinodhiambo.vercel.app/" target="_blank">here</a>
-      </p>
-    </footer>
-  </body>
+      <!-- Embedded Tweet -->
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          Just launched my new HTML portfolio site! Check it out and let me know your thoughts. #webdev #HTML
+        </p>&mdash; Marvin Odhiambo (@Marvin_Odhiambo)
+        <a href="https://twitter.com/Marvin_Odhiambo/status/1234567890123456789">June 19, 2025</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </article>
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+  <footer>
+    <p>Made by Marvin Odhiambo - <a href="https://www.marvinodhiambo.com" target="_blank">here</a></p>
+  </footer>
+</body>
 </html>

@@ -1,0 +1,27 @@
+/* Flexbox layout for TechCon 2024 pages */
+
+/* Make body a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Make main a flex container in row direction and allow it to grow */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Article takes up two parts of available space and scrolls if needed */
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+/* Aside takes up one part of available space and scrolls if needed */
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
